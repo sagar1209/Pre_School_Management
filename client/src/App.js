@@ -1,24 +1,52 @@
-import logo from './logo.svg';
+import { useState,useEffect } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import LandPage from './components/Landingpage/Landingpage';
+
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 
 function App() {
+  const [auth, setauth] = useState(false);
+  const [auth1, setauth1] = useState(true);
+  
+  const isLoggedIn = async () => {
+    try {
+      const res = await fetch('/auth', 
+      {
+        method : "GET",
+        headers : {
+          Accept : "application/json",
+          "Content-Type" : "application/json"
+        },
+        credentials : "include"
+      });
+
+      if(res.status === 200){
+        setauth(true)
+        setauth1(false)
+      }
+      if(res.status === 401){
+        setauth(false)
+        setauth1(true)
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    isLoggedIn();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+        <Navbar auth={auth1}/>
+        <Routes>
+          <Route exact path="/" element={<LandPage />} />   
+        </Routes>
+    </BrowserRouter>
   );
 }
 

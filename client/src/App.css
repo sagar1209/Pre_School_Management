@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,234 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NavBar CSS Starts */
+
+.navBar {
+  background-color: rgba(52, 51, 51, 0.5);
+  float: right;
+  width: 100%;
+  height: 9.5%;
+  position: fixed;
+  z-index: 111;
+  margin: 0px auto;
+}
+
+.nav_img{
+  width: 50%;
+  height: 60%;
+  transform: translate(50%, 20%);
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  float: right;
+  margin-bottom: -.1px;
+}
+
+.i{
+  padding: 0.5rem;
+  margin: .3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white !important;
+  position: relative;
+  /* padding-bottom: 5px; */
+  letter-spacing: 1.5px;
+  width: max-content;
+  outline: none;
+  border: none;
+}
+
+.nav-link{
+  border: none !important;
+  outline: none;
+  text-decoration: none;
+}
+
+.i::after {
+  content: '';
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  margin: 0px auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0px;
+  transform: scale(0);
+  border-radius: 3px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.i:hover::after, .i1:hover .SubMenu::before {
+  transform: scale(1);
+  height: 3px;
+}
+
+
+.Logo {
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* NavBar CSS Over */
+
+.bg_img {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 6rem;
+}
+.Center {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Title {
+  color: black;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  width: max-content;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.Btn {
+  margin-top: 1rem;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1.5px;
+  outline: none;
+  border-radius: 30px;
+  border: 2px double white;
+  background: rgba(44, 38, 38,0.5);
+  transition: all 0.4s ease-in;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.facilities{
+  display : grid;
+  grid-template-columns: 650px 650px;
+  grid-template-rows: 400px 400px;
+  text-align: center;
+  padding: 30px;
+  column-gap: -10px;
+  row-gap: -10px;
+  position: relative;
+  height: 90%; 
+   width: 80%;
+  /* background-color: #eeee; */
+}
+
+.facilities h1{
+  transform: translateY(-500%);
+}
+
+.grid_img{
+  /* position: relative; */
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+
+}
+.rotet{
+  /* position: absolute; */
+  
+  width:100%;
+  height:100%;
+  transform-style: preserve-3d;
+  transition: all .2s ease;
+
+}
+.rotet:hover{
+  transform: rotateY(180deg);
+
+}
+.front{
+  position: absolute;
+  backface-visibility: hidden;
+  width:90%;
+  height:80%;
+  background: #ffc728;
+  
+  
+}
+.back{
+
+  position: absolute;
+  width:90%;
+  height:80%;
+  backface-visibility: hidden;
+  background: #fafafa;
+  transform: rotateY(180deg);
+
+}
+.back h1{
+  transform: translateY(400%);
+}
+.body{
+  background-color: azure;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.card{
+  display : grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  padding-left: 4.2rem;
+
+
+}
+.x{
+  overflow : hidden;
+  height: 50%;
+  width : 90%;
+}
+.y {
+  height: 50%;
+  width : 90%;
+}
+.Activity{
+  width: 595px;
+  overflow : hidden;
+  text-align : center;
+  box-shadow: 0px 0px 10px -5px;
+  background-color: #fafafa;
+}
+.Event{
+  width: 585px;
+  overflow : hidden;
+  text-align : center;
+  box-shadow: 0px 0px 10px -5px;
+  background-color: #fafafa;
+ 
 }
