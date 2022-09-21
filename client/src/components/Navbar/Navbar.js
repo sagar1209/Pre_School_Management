@@ -35,7 +35,7 @@ function Navbar(props) {
 
                         <NavLink className="nav-link i" to="/gallery">Activities</NavLink>
                         <NavLink className="nav-link i" to="/gallery">Events & Celenrations</NavLink>
-                        <NavLink className="nav-link i" to="/gallery">Admission</NavLink>
+                        <NavLink className="nav-link i" to="/admission">Admission</NavLink>
 
                     {/* <li class="item"> */}
                         <NavLink className="nav-link i" to="/contact" id="con">Contact Us</NavLink>

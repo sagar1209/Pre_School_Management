@@ -1,6 +1,9 @@
 import { useState,useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import LandPage from './components/Landingpage/Landingpage';
+import Contact from './components/Contactpage/contact';
+import Admission from './components/Admissionpage/admission';
+
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
@@ -44,7 +47,9 @@ function App() {
     <BrowserRouter>
         <Navbar auth={auth1}/>
         <Routes>
-          <Route exact path="/" element={<LandPage />} />   
+          <Route exact path="/" element={<LandPage />} /> 
+          <Route exact path="/Admission" element={<Admission />} /> 
+          <Route exact path="/contact" element={<Contact />} />    
         </Routes>
     </BrowserRouter>
   );
