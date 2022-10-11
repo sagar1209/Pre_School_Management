@@ -4,6 +4,7 @@ import "../../App.css";
 import facilities from './Facilities';
 import x from '../../img/Activities_1.jpg';
 import y from '../../img/Events_1.jpg';
+import photo from '../../img/Gallary_icon.png';
 
 const LandPage = ()  => {
     return(
@@ -59,6 +60,15 @@ const LandPage = ()  => {
                   </div>
              </div>
            </div>
+           <div className='Photo_Gallary'>
+                <img src = {photo} className="photo_icon"/>
+                <h1>
+                    PHOTO GALLARY
+                </h1>
+                <div className='photo_grid'></div>
+           </div>
+           
+
            
       </div>
       

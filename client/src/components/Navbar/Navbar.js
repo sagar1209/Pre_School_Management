@@ -40,22 +40,23 @@ function Navbar(props) {
                     {/* <li class="item"> */}
                         <NavLink className="nav-link i" to="/contact" id="con">Contact Us</NavLink>
                     {/* </li> */}
-
+                        <NavLink className="nav-link i" to="/before_login">Login</NavLink>
                     {
-                        props.auth ?
-                            <>
-                                {/* <li class="item"> */}
-                                    <NavLink className="nav-link i" to="/login">Login</NavLink>
-                                {/* </li> */}
+                        // props.auth ?
+                        //     <>
+                        //         {/* <li class="item"> */}
+                        //             <NavLink className="nav-link i" to="/before_login">Login</NavLink>
+                        //         {/* </li> */}
 
-                            </> : <>
+                        //     </> : <>
 
-                            {/* <li class="item"> */}
-                                    <NavLink className="nav-link i" to="/logout">Logout</NavLink>
-                                {/* </li> */}
-                            </>
+                        //     {/* <li class="item"> */}
+                        //             <NavLink className="nav-link i" to="/logout">Logout</NavLink>
+                        //         {/* </li> */}
+                        //     </>
                     }
 
+                    <NavLink className="nav-link i" to="/register" id="con">register</NavLink>
                 </ul>
 
             </div>

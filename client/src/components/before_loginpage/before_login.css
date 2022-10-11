@@ -1,0 +1,26 @@
+.A {
+    /* margin-top: 3%; */
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 150px 0px 150px;
+
+    /* flex-direction: column; */
+}
+
+.B {
+    position: relative;
+    top:200px;
+    height: 250px;
+    width: 250px;
+    background-color:lightcoral;
+}
+.C{
+    position: relative;
+    left: 70px;
+    
+}
+.D{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
