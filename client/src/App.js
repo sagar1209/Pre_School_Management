@@ -2,15 +2,13 @@ import { useState,useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import LandPage from './components/Landingpage/Landingpage';
 import Contact from './components/Contactpage/contact';
-import bl from './components/before_loginpage/before_login';
 import Add from './components/Admissionpage/admission';
 import Add2 from './components/before_loginpage/before_login';
-import Register from './components/register/register'
-import Admin_login from './components/login/admin_login';
-import Teacher_login from './components/login/teacher_login';
-import Parent_login from './components/login/parents_login';
-
-
+import Facilities from './components/facilitiespage/facilities';
+import Activities from './components/activity/activities';
+import Gallery from './components/gallery/gallery';
+import Aboutus from './components/aboutus/aboutus';
+import Events_Celebration from './components/Events_Celebration/EventsCelebration';
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
@@ -55,17 +53,16 @@ function App() {
         <Navbar auth={auth1}/>
         <Routes>
           <Route exact path="/" element={<LandPage />} /> 
-          <Route exact path="/Admission" element={<Add />} /> 
+          <Route exact path="/about" element={<Aboutus />} />
+          <Route exact path="/Admission" element={<Add />} />
+          <Route exact path="/facilities" element={<Facilities />} />  
+          <Route exact path="/activities" element={<Activities />} />  
+          <Route exact path="/eventsCelebration" element={<Events_Celebration />} />  
+          <Route exact path="/gallery" element={<Gallery />} />    
           <Route exact path="/contact" element={<Contact />} />    
           <Route exact path="/before_login" element={<Add2/>} />    
-          <Route exact path="/Register" element={<Register />} />  
-          <Route exact path="/Admin_login" element={<Admin_login/>} /> 
-          <Route exact path="
-          /Admin_login/landing" element={<Admin_login/>} /> 
-          <Route exact path="/Teachers_login" element={<Teacher_login/>} /> 
-          <Route exact path="/Parents_login" element={<Parent_login/>} /> 
-          
-        </Routes>
+
+        </Routes> 
     </BrowserRouter>
   );
 }

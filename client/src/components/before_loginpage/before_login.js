@@ -1,36 +1,40 @@
 import React from 'react';
-import './before_login.css';
+import { Link } from "react-router-dom"
+import StudentIMage from "../../img/student4.jpg"
+import AdminIMage from "../../img/admin2.jpg"
+import TeacherImage from "../../img/backgg.JPG"
+import backg from "../../img/backg.jpg"
 
-const admission =() =>{
+const Landing = () => {
     return (
-        <>
-            <div className='A'>
+        <div className="HomePage" style={{ backgroundImage:`url(${backg})`,
+        backgroundRepeat:"no", height:"880px",paddingTop:"100px" }} >
+           <div style={{height:"400px",margin:"auto",backgroundColor:"white",width:"60%",opacity:"0.9",paddingTop:"50px"}}>
 
-                <div className='B'>
-                        <div className='C'>
-                              <h1>Admin</h1>
-                        </div>
-                        <a className='D' href='Admin_login' >Admin</a>
-                        
+         
+            <div className=" m-auto" style={{display:"flex",width:"100%",height:"300px",justifyContent:"center" }}>
+                <div className="card" >
+                   <img src={AdminIMage} alt="StudentIMage" style={{height:"250px",width:"250px"}} />
+                   
+                   <Link className="link_class" to="/adminlogin" style={{textDecoration:"none",fontFamily:"Oswald",color:"black",textAlign:"center"}}> <h3>Signin as  Admin</h3></Link>
                 </div>
-
-                <div className='B'>
-
-                       <div className='C'>
-                              <h1>Teacher</h1>
-                        </div>
-                        <a className='D' href='Teachers_login' >Teacher</a>
+         
+                <div className="card" style={{marginLeft:"30px"}}>
+                   <img src={StudentIMage} alt="StudentIMage" style={{height:"250px",width:"250px"}} />
+               
+                   <Link className="link_class" to="/stulogin" style={{textDecoration:"none",fontFamily:"Oswald",color:"black",textAlign:"center"}}> <h3 >Signin as  Student</h3></Link>  
                 </div>
-
-                <div className='B'>
-                         <div className='C'>
-                              <h1>Parents</h1>
-                        </div>
-                        <a className='D' href='Parents_login' >Parents</a>
+                
+                <div className="card" style={{marginLeft:"30px"}}>
+                   <img src={TeacherImage} alt="StudentIMage" style={{height:"250px",width:"250px"}} />
+                  
+                   <Link className="link_class" to="/teclogin" style={{textDecoration:"none",fontFamily:"Oswald",color:"black",textAlign:"center"}}> <h3 >Signin as  Teacher</h3></Link>  
                 </div>
-
             </div>
-        </>
-    )
-}
-export default admission;
+            </div>
+            
+        </div>
+    );
+};
+
+export default Landing;

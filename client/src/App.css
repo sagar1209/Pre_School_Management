@@ -86,6 +86,7 @@
   border: none;
 }
 
+
 .nav-link{
   border: none !important;
   outline: none;
@@ -248,7 +249,7 @@
 .back h1{ 
   transform: translateY(400%);  
   color: white;
-  transform: translate(0px , 140px); 
+  transform: translate(0px , 14px); 
   text-align: center;
 } 
 
@@ -307,7 +308,7 @@
   letter-spacing: 4px;
 }
 
-.Event a:active , .Event a{
+.Event a:active , .Event a, .S_btnn{
   text-decoration: none;
   color: black;
   background-color: burlywood;
@@ -319,8 +320,20 @@
   background-color: burlywood;
 }
 .Photo_Gallary{
-    display: flex;
+    align-items: center;
+    /* margin: 20px auto; */
+    padding: 50px;
+    width: 100%;
 }
+
+.pg{
+  display: flex;
+}
+.pg h1{
+  transform: translateY(10%);
+  margin-left: 20px;
+}
+
  /* .photo_grid{
   
   display : grid;
@@ -605,6 +618,16 @@
   height: 300px;
 }
 
+.admission h1 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  z-index: 99;
+}
+
+
 .back_image h1, .about_us_outer h1{
   display: block;
   position: absolute;
@@ -672,3 +695,418 @@
 .contact_submit:hover{
   background-color: rgba(71, 38, 253, 0.8);
 }
+
+
+
+/* beforelogin */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f4f6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.link_class {
+   color: white;
+   font-size:20px ;
+   text-decoration: none;
+   height: 10px;
+}
+.landing_img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+.st_input_class{
+  height: 70px;
+}
+.mod_input_class{
+  height: 50px;
+}
+.stregis_incls{
+  height: 55px;
+}
+.title_style{
+  height: 70px;
+  background: linear-gradient(90deg, rgba(79,99,205,1) 2%, rgba(151,111,91,1) 42%, rgba(73,214,137,1) 76%, rgba(182,130,80,1) 93%);
+  border-radius: 15px;
+ margin-bottom: 20px;
+ text-align: center;
+ color: #f2f4f6;
+ font-weight: bolder;
+ 
+}
+
+.input-field{
+  height: 50px;
+  width: 240px;
+  margin-left: 100px;
+  background-color: rgb(84, 115, 181);
+}
+#selectId{
+  height: 35px;
+}
+
+.btn_regis{
+  height: 50px;
+  margin-left: 10px; 
+}
+.edit_profile{
+  text-decoration: none;
+  position:  absolute;
+ 
+  margin-left: 209px;
+  
+    margin-top: -62px;
+  
+}
+
+.mark_button{
+  height: 40px;
+ 
+  background-color: aqua;
+}
+
+ 
+/* facilities */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+/* .c{
+  color: green;
+  font-size: 20px;
+} */
+
+#idd{
+  color: red;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px blue;
+}
+
+/* From here */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  clear: both;
+  /* flex-direction: row; */
+  /* grid-template-columns: auto auto; */
+  /* margin-top: 20px; */
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 35%;
+  /* border: 2px solid red; */
+}
+
+.left img{
+  width: 100%;
+  height: 50%;
+}
+
+.right{
+  /* border: 2px solid rgb(0, 17, 255); */
+  width: 65%;
+  /* height: 100vh; */
+  transform: translate(54%,7%);
+}
+
+.right .title{
+  margin: 10px;
+  padding: 5px;
+  background-color: brown;
+}
+
+.data_outer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(5%);
+}
+
+/* .f1, .f2, .f3, .f4, .f5{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: red;
+} */
+.f{
+  margin: 10px;
+}
+
+.d{
+  width: 90%;
+  border: 1px solid black;
+  height: 200px;
+  background-color: #e0afc8;
+}
+
+.photo_grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* grid-template-rows: auto auto; */
+  /* column-gap: 10px; */
+}
+
+/* Footer CSS Starts */
+
+.Footer {
+  /* background: linear-gradient(to right, rgb(16, 183, 254), rgb(171, 223, 247)); */
+  /* background: rgba(0, 0, 0, 0.5); */
+  background-image: linear-gradient(to right bottom, rgba(49, 49, 49, 0.4), rgba(49, 49, 49, 0.4)), url('https://media.istockphoto.com/photos/luxurious-beautiful-modern-villa-with-front-yard-garden-at-sunset-picture-id1283532082?b=1&k=20&m=1283532082&s=170667a&w=0&h=KxQ3cfMs-Xi7FL2TXfrgFbi9pwtBOdjSEc4-ufAeVlo=');
+  /* background-position: center; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: fit-content;
+  background-origin: content-box;
+  background-attachment: fixed;
+  /* color: white; */
+}
+
+.box {
+  position: relative;
+}
+
+.upper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* column-gap: 10px; */
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.call_us,
+.mail_us {
+  margin: 0px auto;
+  display: flex;
+  background-color: rgba(240, 237, 237, 0.7);
+  color: blue;
+  padding: 10px;
+  width: 80%;
+}
+
+.call_us {
+  width: 95%;
+}
+
+.call_us i,
+.mail_us i {
+  transform: scale(1.5);
+  /* overflow: hidden; */
+  margin: auto 5px;
+}
+
+.call_outer,
+.mail_outer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  /* width: 90%; */
+}
+
+.call_outer p,
+.mail_outer p {
+  margin: 2px;
+  color: black;
+}
+
+.logo {
+  width: 5%;
+  height: 3%;
+}
+
+.lower {
+  width: 100%;
+  height: 310px;
+  background-color: rgba(24, 24, 24, 0.5);
+  display: flex;
+  margin: 0px auto;
+  color: white !important;
+}
+
+section {
+  /* padding: 15px; */
+  width: 95%;
+  height: fit-content;
+  margin: 10px;
+  color: white !important;
+  /* margin: 0px auto; */
+  /* text-align: center; */
+}
+
+section img {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+
+section .about {
+  /* background-color: rgba(240, 237, 237, 0.7); */
+  color: white;
+  font-size: 17px;
+  letter-spacing: 2px;
+  width: 95%;
+  padding: 2px;
+  margin: 10px;
+}
+
+.icons {
+  display: flex;
+  margin: 10px auto;
+  margin: 10px;
+  background-color: rgba(240, 237, 237, 0.7);
+  width: fit-content;
+}
+
+
+.icons i {
+  margin: 15px;
+  transform: scale(1.5);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.useful_link {
+  width: 95%;
+  margin: 0px auto;
+  margin: 10px;
+  text-align: center;
+}
+
+.useful_link p {
+  color: white;
+  font-size: 24px;
+  /* text-align: center; */
+  width: 100%;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.useful_link ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  height: fit-content;
+  /* margin: 10px; */
+}
+
+.useful_link ul li {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin: 5px auto;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.useful_link a{
+  text-decoration: none;
+  /* font-size: 30px; */
+  color: white;
+}
+
+.subs {
+  width: 95%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sub {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  /* width: 100%; */
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.subs_info {
+  color: white;
+  font-size: 18px;
+  /* text-align: center; */
+  /* width: 100%; */
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.subs input {
+  outline: none;
+  margin-top: 20px;
+  width: 50%;
+  height: 35px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.subs input::placeholder {
+  /* transform: scale(1.3); */
+  padding: 10px;
+}
+
+.subs button {
+  width: 20%;
+  color: white;
+  background-color: black;
+  height: 35px;
+  margin: 20px;
+  font-size: 17px;
+}
+
+.footer_image {
+  /* background-color: red; */
+  width: max-content;
+  height: 100%;
+  float: right;
+  transform: translate(-10%, -15%);
+  /* z-index: -1; */
+}
+
+.footer_image img {
+  width: 100%;
+  height: 50%;
+  /* z-index: -1; */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 31% 100%, 31% 75%, 0% 75%);
+  transition: clip-path 1s ease-in-out;
+}
+
+.footer_image img:hover {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%, 0 0, 0 0, 0 0);
+}
+

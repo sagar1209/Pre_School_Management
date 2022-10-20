@@ -33,8 +33,8 @@ function Navbar(props) {
                         <NavLink className="nav-link i" to="/gallery">Gallery</NavLink>
                     {/* </li> */}
 
-                        <NavLink className="nav-link i" to="/gallery">Activities</NavLink>
-                        <NavLink className="nav-link i" to="/gallery">Events & Celenrations</NavLink>
+                        <NavLink className="nav-link i" to="/activities">Activities</NavLink>
+                        <NavLink className="nav-link i" to="/eventsCelebration">Events & Celenrations</NavLink>
                         <NavLink className="nav-link i" to="/admission">Admission</NavLink>
 
                     {/* <li class="item"> */}
@@ -56,7 +56,7 @@ function Navbar(props) {
                         //     </>
                     }
 
-                    <NavLink className="nav-link i" to="/register" id="con">register</NavLink>
+               
                 </ul>
 
             </div>
