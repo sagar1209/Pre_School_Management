@@ -40,7 +40,8 @@ function Navbar(props) {
                     {/* <li class="item"> */}
                         <NavLink className="nav-link i" to="/contact" id="con">Contact Us</NavLink>
                     {/* </li> */}
-                        <NavLink className="nav-link i" to="/before_login">Login</NavLink>
+                        {/* <NavLink className="nav-link i" to="localhost:3001/landing">Login</NavLink> */}
+                        <a href="http://localhost:3001/landing" className="nav-link i">Login</a>
                     {
                         // props.auth ?
                         //     <>
