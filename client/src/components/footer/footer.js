@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import './footer.css';
 const Footer = () => {
     return<>
     <div className='Footer'>
@@ -28,25 +28,31 @@ const Footer = () => {
             <p className='about'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
             {/* <p className='follow'></p> */}
             <div className='icons'>
-              <a href="https://www.facebook.com/" ><i class="bi bi-facebook" > </i></a>
+         
+              <a href="https://www.facebook.com/" ><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/" >
               <i class="bi bi-instagram"></i></a>
               <a href="https://twitter.com/i/flow/login" ><i class="bi bi-twitter"></i></a>
               <a href="https://www.youtube.com/" ><i class="bi bi-youtube"></i></a>
+              
               <a href="https://www.linkedin.com/login" ><i class="bi bi-linkedin"></i></a>
               
             </div>
             {/*  */}
           </section>
+          
           <div className='useful_link' >
             <p></p>
            
             <ul>
             <li className="nav-item">
             <a className="nav-link" href="/">
+            
               HOME
             </a>
           </li>
+          
+
             <li className="nav-item">
             <a className="nav-link" href="/about">
               ABOUT US
@@ -83,6 +89,7 @@ const Footer = () => {
               ADMISSION
             </a>
             </li>
+           
             <li className="nav-item">
             <a className="nav-link" href="/contact">
               CONTACT
@@ -92,7 +99,7 @@ const Footer = () => {
           </div>
               <div>
            <section>
-            <img src='https://scontent.fstv8-1.fna.fbcdn.net/v/t39.30808-6/278641599_111698301515517_4162407072246061070_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mGbMDyOAcbkAX_mVogX&_nc_ht=scontent.fstv8-1.fna&oh=00_AT84wwsqIKxYeir0_XLyBVnFkSIYhmq9w4X0d4osvOyp6g&oe=63561C79' alt=''></img>
+            <img src='https://scontent.famd14-1.fna.fbcdn.net/v/t39.30808-6/278641599_111698301515517_4162407072246061070_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tRW6_e4AVwQAX8CrxsW&_nc_ht=scontent.famd14-1.fna&oh=00_AfCZmtgP1tDkDhwKxQzq3NRNq6qRZprTtNZ7TtBw3CVKFQ&oe=636FD1B9' alt=''></img>
             </section>
           </div>
          

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Footer from "../footer/footer";
 import useHistory from "react";
 
 const Contact = () => {
@@ -70,6 +70,7 @@ const handleSubmit = async (event) => {
             <form  onSubmit={handleSubmit}  method="POST"  > 
 
               <div className="contact_name">
+              <br></br>
                 <label for="exampleInputEmail1" class="">Name</label>
                 <input
                   type="text"
@@ -115,7 +116,9 @@ const handleSubmit = async (event) => {
               </div>
             </form>
           </div>
+         
       </div>
+      
     </>
   );
 };

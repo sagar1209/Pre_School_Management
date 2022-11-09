@@ -1,6 +1,7 @@
 import React from 'react';
 import back_img from '../../img/big_img.png';
 import "../../App.css";
+// import Footer from "../footer/footer"
 import facilities from './Facilities';
 import x from '../../img/Activities_1.jpg';
 import y from '../../img/Events_1.jpg';
@@ -15,6 +16,7 @@ import photo6 from '../../img/photo6.png';
 import photo7 from '../../img/photo7.png';
 import photo8 from '../../img/photo8.png';
 
+
 const LandPage = ()  => {
     return(
        
@@ -22,10 +24,10 @@ const LandPage = ()  => {
            <img className='bg_img' src = {back_img}/>
            <div className='Center'>
                     <p className='Title'>Welcome <span className='s'>to</span> Kydoos</p>
-
-                    <button className='Btn'>Admission</button>
+                    <a href='/admission'><button className='Btn'>Admission</button></a>
+                  
                         </div>
-           <div className='facilities'>
+           <div className='facilities'> 
             
            {facilities.map( Facilities => {
                return (
@@ -83,9 +85,9 @@ const LandPage = ()  => {
                   <img src={photo8} alt="galarry" />
                 </div>
            </div>
-           <Footer />
            
-
+           
+           <Footer />
            
       </div>
       

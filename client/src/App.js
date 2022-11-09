@@ -8,6 +8,7 @@ import Facilities from './components/facilitiespage/facilities';
 import Activities from './components/activity/activities';
 import Gallery from './components/gallery/gallery';
 import Aboutus from './components/aboutus/aboutus';
+// import Footer from './components/footer/footer';
 import Events_Celebration from './components/Events_Celebration/EventsCelebration';
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -63,6 +64,7 @@ function App() {
           <Route exact path="/before_login" element={<Add2/>} />    
 
         </Routes> 
+        {/* <Footer/> */}
     </BrowserRouter>
   );
 }

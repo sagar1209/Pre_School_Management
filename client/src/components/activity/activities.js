@@ -20,6 +20,7 @@ const activities = () => {
                                 <div className="f">
                                     <h4>{item.name}</h4>
                                     <div className='d'>{item.desription}</div>
+
                                 </div>
                             </>
                     }
@@ -27,7 +28,9 @@ const activities = () => {
                 }
             </div>
         </div>
+        
     </div>
+    
     </>
     )
 }
